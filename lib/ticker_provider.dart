@@ -1,7 +1,6 @@
 import 'package:flutter/scheduler.dart';
 
 class DotsTickerProvider implements TickerProvider {
-
   final bool enabled;
 
   DotsTickerProvider(this.enabled);
