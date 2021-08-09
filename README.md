@@ -17,10 +17,10 @@ methods. This method will call your function every time the animation value chan
 _animationProvider.setUpAnimation(tickFunction: (value) => update(value));
 ```
 
-Starts the animation. You need to specify the value of start, end, duration animation.
+Starts the animation. You need to specify the value of begin, end, duration animation.
 
 ```dart
-_animationProvider.forward(0.0,300.0,400.0);
+_animationProvider.forward(begin: 0.0, end: 300.0, const Duration(milliseconds: 500));
 ```
 
 Will return true or false depending on whether the animation is active.
