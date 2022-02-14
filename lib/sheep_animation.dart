@@ -5,8 +5,12 @@ import 'package:flutter/animation.dart';
 
 class AnimationProvider {
   AnimationController _controller;
-  late Tween _tween;
+  late Tween<double> _tween;
   late Animation<double> _animation;
+
+  Tween<double> get tween => _tween;
+
+  double get value => _controller.value;
 
   AnimationProvider(DotsTickerProvider tickerProvider)
       : _controller = AnimationController(vsync: tickerProvider);
